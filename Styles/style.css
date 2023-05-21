@@ -1,0 +1,299 @@
+@font-face{
+	font-family: Roboto;
+	src: url(../Fonts/Roboto-Bold.ttf) format("truetype");
+}
+
+/*Common / General*/
+*{
+	box-sizing: border-box;
+	vertical-align: middle;
+	text-justify: justify;
+	font-family: 'Roboto';
+	font-size: 24px;
+}
+body{
+	margin: 0px;
+	background: #c7f5ff url(../Images/cloud2.png);
+}
+h1{
+	margin: 20px;
+	font-size: 36px;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+input, select{
+	width: 200px;
+	height: 30px;
+	display: block;
+	margin: 20px auto;
+	border: 2px solid #018abd;
+	border-radius: 50px;
+	background-color: white;
+}
+select{
+	width: 60px;
+}
+input:focus, select:focus{
+	outline-color: #018abd;
+	border: 4px solid #018abd;
+}
+header{
+	width: 100%;
+	display: flex;
+	height: 120px;
+	background-color: #018abd;
+	margin-bottom: 30px;
+}
+.container{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+main{
+	width: 90%;
+	margin: auto;
+}
+fieldset{
+	width: 30%;
+	margin: 30px auto;
+	padding: 20px;
+	text-align: center;
+	border: 3px solid #018abd;
+	border-radius: 50px;
+	background-color: white;
+}
+button{
+	font-size: 20px;
+	width: 170px;
+	height: 55px;
+	color: white;
+	background-color: #018abd;
+	border: none;
+	border-radius: 100px;
+}
+button:hover, .headerNav:hover{
+	background-color: #ffe8c4;
+	color: black;
+}
+.commonCard{
+	margin: 40px auto;
+	border: 3px solid #018abd;
+	border-radius: 50px;
+	text-align: center;
+	background-color: white;
+	width: 700px;
+	height: 350px;
+}
+
+/*Header*/
+.headerNavigation{
+	display: flex;
+	margin-left: 30px;
+}
+.headerNav{
+	font-size: 40px;
+	height: 120px;
+	line-height: 120px;
+	width: 400px;
+	text-align: center;
+}
+
+/*Footer*/
+footer{
+	display: flex;
+	font-size: 24px;
+	margin-top: 60px;
+	padding: 20px;
+	background-color: #018abd;
+}
+.test-0-phone{
+	color: white;
+	margin-right: 100px;
+}
+.footerNav{
+	width: 150px;
+	text-align: center;
+	margin: 15px;
+}
+.footerNav:hover{
+	font-size: 28px;
+}
+
+/*Slider*/
+.bxslider{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.bx-wrapper{
+  width: 800px !important;
+  margin: 0 auto;
+  position: relative;
+}
+.bx-wrapper img{
+  width: 100%;
+  height: 500px;
+  max-width: 100%;
+  display: block;
+}
+
+/*index.html*/
+.test-0-logo{
+	width: 287px;
+	height: 90px;
+	margin: 10px;
+	transform: rotate(20deg);
+}
+.test-0-logo:hover{
+	transform: rotate(0deg);
+}
+.description{
+	background: #ffe8c4 url(../Images/commercial_airline_main.png) no-repeat top -100px right -200px / 900px;
+	height: 400px;
+	width: 1300px;
+	margin: auto;
+}
+.descriptionH{
+	padding: 45px 0px;
+}
+.descriptionLi{
+	margin: 30px 30px;
+	font-size: 30px;
+}
+.promotion{
+	padding: 20px;
+	width: 700px;
+	height: 850px;
+}
+.test-0-ai{
+	margin: 20px;
+	width: 600px;
+	height: 400px;
+	border: 4px solid #018abd;
+	border-radius: 25px;
+}
+.test-0-abm{
+	width: 200px;
+	height: 80px;
+	font-size: 24px;
+	margin-top: 40px;
+}
+.strangeButton{
+	margin-top: 10px;
+}
+.userFeedback{
+	border: 4px solid #018abd;
+	border-radius: 30px;
+	height: 210px;
+	width: 37%;
+	margin: 30px 70px;
+	padding: 20px;
+	background-color: white;
+}
+.feedbackUserIcon{
+	width: 70px;
+	height: 70px;
+}
+.username{
+	margin: 15px;
+}
+.feedbackText{
+	margin: 10px;
+}
+.subscribe{
+	text-align: center;
+	margin: auto;
+}
+.subscribeForm{
+	width: 400px;
+}
+.test-0-sie{
+	width: 300px;
+}
+
+/*Login*/
+#loginMain{
+	margin: 163.5px auto;
+}
+
+/*Register*/
+.register{
+	color: #018abd;
+}
+
+
+
+/*Search*/
+.flightCard{
+	padding: 20px;
+	margin: 40px;
+}
+.flightTimeWidth{
+	width: 50%;
+	margin: auto;
+}
+.test-4-ft{
+	font-size: 14px;
+}
+.test-4-fn, .test-4-at, .test-4-dd, .test-4-fp{
+	text-align: left;
+}
+.test-4-dd{
+	margin-bottom: 10px;
+}
+.test-4-fp{
+	margin-top: 10px;
+}
+
+/*Booking*/
+.flightCard2{
+	text-align: left;
+	margin: 40px auto;
+}
+.existingPassengers{
+	margin: 30px auto;
+}
+.flightsSoon{
+	height: 250px;
+}
+.flightTime{
+	font-size: 40px;
+}
+.passengersButton{
+	margin: auto;
+	width: 300px;
+	height: 75px;
+	font-size: 24px;
+}
+.test-5-price, .test-5-book{
+	margin: 40px auto;
+	border-radius: 100px;
+	padding: 30px;
+	width: 310px;
+	height: 130px;
+}
+.test-5-book{
+	display: block;
+	font-size: 36px;
+}
+.flightData{
+	height: 380px;
+}
+
+/*Profile*/
+.profileCard{
+	height: 320px;
+}
+.test-3-code, .test-3-d1, .test-3-name, .test-3-last, .test-3-num{
+	text-align: left;
+}
+.test-3-code, .test-3-d1, .test-3-from, .test-3-to{
+	margin: 20px;
+}
+.test-3-name, .test-3-last, .test-3-num, .test-3-logout{
+	margin: 15px;
+}
