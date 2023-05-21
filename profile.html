@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FlightPool - Профиль</title>
+	<link rel="stylesheet" type="text/css" href="Styles/style.css">
+	<link rel="stylesheet" type="text/css" href="Styles/mainBxSlider.css">
+	<link rel="stylesheet" href="Styles/animate.css"/>
+</head>
+<body>
+	<header class="wow fadeInDown" data-wow-delay="0.1s">
+		<a href="index.html"><img src="Images/logo.png" alt="logo" class="test-0-logo"></a>
+		<div class="headerNavigation">
+			<a href="index.html#promotionSection" class="test-0-nav-1 headerNav">Акции</a>
+			<a href="index.html#searchForm" class="test-0-nav-2 headerNav">Поиск</a>
+			<a href="login.html" class="test-0-nav-3 headerNav">Личный кабинет</a>
+		</div>
+	</header>
+	<main>
+		<section class="wow fadeInUp" data-wow-delay="0.1s">
+			<div class="profileCard commonCard">
+				<h1>Данные пользователя</h1>
+				<div class="test-3-name">Имя: Дмитрий</div>
+				<div class="test-3-last">Фамилия: Картамышев</div>
+				<div class="test-3-num">Количество забронированных полетов: 1</div>
+				<button type="button" class="test-3-logout" id="logout">Выйти</button>
+			</div>
+		</section>
+		<section class="wow fadeInUp" data-wow-delay="0.2s">
+			<h1>Предстоящие бронирования</h1>
+			<div class="flightsSoon commonCard">
+				<div class="test-3-code">Код: 73232927</div>
+				<div class="test-3-d1">Дата вылета: 24 Мая</div>
+				<div class="container flightTimeWidth">
+					<div class="flightTime test-3-t1">07:11</div>
+					<div class="flightTime">→</div>
+					<div class="flightTime test-3-t2">14:41</div>
+				</div>
+				<div class="container">
+					<div class="test-3-from">Домодедово (DME)</div>
+					<div class="test-3-to">Пулково (LED)</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="test-0-phone" id="contact">Служба поддержки: <br> 8 (800) 100-10-10</div>
+			<a href="index.html" class="footerNav">Домой</a>
+			<a href="login.html" class="footerNav">Войти</a>
+			<a href="register.html" class="footerNav">Регистрация</a>
+			<a href="#contact" class="footerNav">Связь</a>
+			<a href="index.html#description" class="footerNav">Новости</a>
+			<a href="index.html" class="footerNav">Вернуться</a>
+			<a href="index.html#feedback" class="footerNav">Отзывы</a>
+	</footer>
+<script src="Scripts/wow.min.js"></script>
+<script type="text/javascript">
+	new WOW().init();
+</script>
+<script type="text/javascript" src="Scripts/scriptProfile.js"></script>
+</body>
+</html>

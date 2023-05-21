@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FlightPool - Бронирование</title>
+	<link rel="stylesheet" type="text/css" href="Styles/style.css">
+	<link rel="stylesheet" type="text/css" href="Styles/mainBxSlider.css">
+	<link rel="stylesheet" href="Styles/animate.css"/>
+	<script type="text/javascript" src="Scripts/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="Scripts/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<header class="wow fadeInDown" data-wow-delay="0.1s">
+		<a href="index.html"><img src="Images/logo.png" alt="logo" class="test-0-logo"></a>
+		<div class="headerNavigation">
+			<a href="index.html#promotionSection" class="test-0-nav-1 headerNav">Акции</a>
+			<a href="index.html#searchForm" class="test-0-nav-2 headerNav">Поиск</a>
+			<a href="login.html" class="test-0-nav-3 headerNav">Личный кабинет</a>
+		</div>
+	</header>
+	<main>
+		<section class="wow fadeInUp" data-wow-delay="0.1s">
+			<div class="flightData commonCard">
+				<h1>Данные рейса</h1>
+				<div class="flightCard flightCard2">
+					<div class="test-5-fc">Рейс №: 73232927 </div>
+					<div class="test-5-dd">Дата вылета: 24 Мая</div>
+					<div class="container">
+						<div class="test-5-fcity">Москва</div>
+						<div class="test-5-tcity">Санкт-Петербург</div>
+					</div>
+					<div class="container">
+						<div class="test-5-from">Домодедово (DME)</div>
+						<div>→</div>
+						<div class="test-5-to">Пулково (LED)</div>
+					</div>
+					<div class="container">
+						<div class="flightTime test-5-dt">07:11</div>
+						<div class="flightTime test-5-at">14:41</div>
+					</div>
+					<br>
+					<div class="test-5-fp">Стоимость на пассажира: 5723 руб.</div>
+				</div>
+			</div>
+		</section>
+		<section class="wow fadeInUp" data-wow-delay="0.1s">
+			<div class="container">
+				<button class="passengersButton test-5-add" id="addPassengerButton">Добавить пассажира</button>
+			</div>
+			<div class="existingPassengers">
+				<form class="wow fadeInLeft" data-wow-delay="0.5s">
+					<fieldset>
+						<h1>Добавить пассажира</h1>
+						<label>Имя</label>
+						<input required type="text" class="test-5-name" name="test-5-input">
+						<label>Фамилия</label>
+						<input required type="text" class="test-5-last" name="test-5-input">
+						<label>Дата рождения</label>
+						<input required type="date" class="test-5-dob" name="test-5-input">
+						<label>Номер документа</label>
+						<input required type="number" class="test-5-doc" name="test-5-input">
+						<button onclick="this.parentNode.parentNode.remove(); document.getElementById('FinaleCost').textContent = Number(document.getElementById('FinaleCost').textContent) - 5723" class="addingPassengersButton" id="cancelPassengerButton" type="button">Отмена</button>
+					</fieldset>
+				</form>
+			</div>
+			<div class="test-5-price commonCard">Итоговая стоимость: <span id="FinaleCost">5723</span> руб</div>
+			<a href="login.html"><button class="test-5-book">Бронировать</button></a>
+		</section>
+	</main>
+	<footer>
+		<div class="test-0-phone" id="contact">Служба поддержки: <br> 8 (800) 100-10-10</div>
+			<a href="index.html" class="footerNav">Домой</a>
+			<a href="login.html" class="footerNav">Войти</a>
+			<a href="register.html" class="footerNav">Регистрация</a>
+			<a href="#contact" class="footerNav">Связь</a>
+			<a href="index.html#description" class="footerNav">Новости</a>
+			<a href="index.html" class="footerNav">Вернуться</a>
+			<a href="index.html#feedback" class="footerNav">Отзывы</a>
+	</footer>
+<script src="Scripts/wow.min.js"></script>
+<script type="text/javascript">
+	new WOW().init();
+</script>
+<script type="text/javascript" src="Scripts/scriptBooking.js"></script>
+</script>
+</body>
+</html>

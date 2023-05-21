@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FlightPool</title>
+	<link rel="stylesheet" type="text/css" href="Styles/style.css">
+	<link rel="stylesheet" type="text/css" href="Styles/mainBxSlider.css">
+	<link href="Styles/jquery.bxslider.css" rel="stylesheet" />
+	<link rel="stylesheet" href="Styles/animate.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="Scripts/jquery.bxslider.js"></script>
+</head>
+<body>
+	<header class="wow fadeInDown" data-wow-delay="0.1s">
+		<a href="index.html"><img src="Images/logo.png" alt="logo" class="test-0-logo"></a>
+		<div class="headerNavigation">
+			<a href="index.html#promotionSection" class="test-0-nav-1 headerNav">Акции</a>
+			<a href="index.html#searchForm" class="test-0-nav-2 headerNav">Поиск</a>
+			<a href="login.html" class="test-0-nav-4 headerNav">Личный кабинет</a>
+		</div>
+	</header>
+	<main>
+		<section class="description wow fadeInUp" data-wow-delay="0.1s" id="description">
+			<h1 class="descriptionH">Принципы накопления бронирований</h1>
+				<div class="descriptionDiv">
+					<ol>
+						<li class="descriptionLi">Выбрать удобную дату перелета.</li>
+						<li class="descriptionLi">Накопить больше 50% бронирований на рейс.</li>
+						<li class="descriptionLi">Получить снижение стоимости.</li>
+					</ol>
+				</div>
+		</section>
+		<section class="wow fadeInUp" data-wow-delay="0.2s">
+			<h1>Мы сближаем города, вы – живете там, где хотите</h1>
+			<div class="slider">
+				<ul class="bxslider">
+			  		<li><img src="Images/Slider/Airplane1.jpg"></li>
+			  		<li><img src="Images/Slider/Inside.jpg"></li>
+			  		<li><img src="Images/Slider/Airplane2.jpg"></li>
+			  		<li><img src="Images/Slider/Staff.jpg"></li>
+			  		<li><img src="Images/Slider/Aircraft3.jpeg"></li>
+				</ul>
+			</div>
+		</section>
+		<section id="searchForm" class="wow fadeInUp">
+			<h1>Поиск билетов</h1>
+			<form class="search">
+				<fieldset>
+					<div>Город или аэропорт отправления</div>
+					<input type="text" id="placeFlightFrom" class="test-0-fd">
+					<div>Город или аэропорт назначения</div>
+					<input type="text" id="placeFlightTo" class="test-0-fa">
+					<div>Дата вылета туда</div>
+					<input type="date" id="dateFlightTo" class="test-0-fdt">
+					<div>Дата вылета обратно</div>
+					<input type="date" id="dateFlightBack" class="test-0-fat">
+					<div>Количество пассажиров</div>
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+					</select>
+					<p id="check"></p>
+					<button type="button" class="test-0-fbs" id="searchButton">Найти</button>
+				</fieldset>
+			</form>
+		</section>
+		<section id="promotionSection">
+			<h1>Акции</h1>
+			<div class="container">
+				<div class="promotion commonCard wow fadeInUp" data-wow-delay="0.1s">
+					<h2 class="test-0-an">Возвращаем и меняем Ваши билеты</h2>
+					<img src="Images/promotions/promotion1.jpg" class="test-0-ai">
+					<div class="test-0-ad">Пандемия изменила планы многих путешественников, но мы знаем, что она не будет длиться вечно.
+					Как только все это закончится, мы продолжим исследовать этот мир так, как раньше.
+					Специальные правила, разработанные для этой непростой ситуации, помогут вам отменить поездку.
+					или отложить на потом.</div>
+					<button class="test-0-abm strangeButton">Подробнее</button>
+				</div>
+				<div class="promotion commonCard wow fadeInUp" data-wow-delay="0.2s">
+					<h2 class="test-0-an">Лучшие предложения</h2>
+					<img src="Images/promotions/promotion2.jpg" class="test-0-ai">
+					<div class="test-0-ad">Чтобы снова увидеть улицы, которые были свидетелями так много. Чтобы обнять своих любимых и оглянуться, чтобы увидеть через что вы прошли. И думать о новых мечтах, которые будут такими особенными!</div>
+					<button class="test-0-abm">Подробнее</button>
+				</div>
+				<div class="promotion commonCard wow fadeInUp" data-wow-delay="0.1s">
+					<h2 class="test-0-an">Будем видиться чаще</h2>
+					<img src="Images/promotions/promotion3.jpg" class="test-0-ai">
+					<div class="test-0-ad">С начала января мы расширяем географию полетов по России, чтобы вы могли чаще видеть своих близких. Выбирайте нашу компанию, чтобы лететь туда, где вас всегда ждут.</div>
+					<button class="test-0-abm">Подробнее</button>
+				</div>
+				<div class="promotion commonCard wow fadeInUp" data-wow-delay="0.2s">
+					<h2 class="test-0-an">Все снова включено</h2>
+					<img src="Images/promotions/promotion4.jpg" class="test-0-ai">
+					<div class="test-0-ad">С 10 августа мы возобновим полеты в Турцию. Рейсы из Москвы в Анталию будут выполняться два раза в день ежедневно, а рейсы по маршруту Москва-Даламан будут выполняться от трех до семи раз в неделю.</div>
+					<button class="test-0-abm">Подробнее</button>
+				</div>
+			</div>
+		</section>
+		<section id="feedback">
+			<h1>Нашей компании доверяют</h1>
+			<div class="container">
+				<div class="userFeedback wow fadeInUp" data-wow-delay="0.1s">
+					<div class="container">
+						<img src="Images/Icons/User.png" alt="userIcon" class="feedbackUserIcon">
+						<div class="username">Любовь Ивановна</div>
+					</div>
+					<div class="feedbackText">Перелет просто супер. Прилетели даже раньше. Отличная авиакомпания.</div>
+				</div>
+				<div class="userFeedback wow fadeInUp" data-wow-delay="0.2s">
+					<div class="container">
+						<img src="Images/Icons/User.png" alt="userIcon" class="feedbackUserIcon">
+						<div class="username">Наталья Петровна</div>
+					</div>
+					<div class="feedbackText">Перелёт был очень комфортный, внимательное и доброжелательное обслуживание.</div>
+				</div>
+				<div class="userFeedback wow fadeInUp" data-wow-delay="0.1s">
+					<div class="container">
+						<img src="Images/Icons/User.png" alt="userIcon" class="feedbackUserIcon">
+						<div class="username">Александр Романович</div>
+					</div>
+					<div class="feedbackText">Отличные пилоты, приветливые бортпроводники, и даже вкусные сэндвичи.</div>
+				</div>
+				<div class="userFeedback wow fadeInUp" data-wow-delay="0.2s">
+					<div class="container">
+						<img src="Images/Icons/User.png" alt="userIcon" class="feedbackUserIcon">
+						<div class="username">Елена Михайловна</div>
+					</div>
+					<div class="feedbackText">Очень довольна поездкой, вылетели вовремя. Бортпроводники очень внимательные. Всё очень хорошо. Билеты недорогие.</div>
+				</div>
+				<div class="userFeedback wow fadeInUp" data-wow-delay="0.1s">
+					<div class="container">
+						<img src="Images/Icons/User.png" alt="userIcon" class="feedbackUserIcon">
+						<div class="username">Марина Александровна</div>
+					</div>
+					<div class="feedbackText">Перелет прошел очень хорошо, мягкие взлет и посадка. Я очень довольна авиакомпанией.</div>
+				</div>
+				<div class="userFeedback wow fadeInUp" data-wow-delay="0.2s">
+					<div class="container">
+						<img src="Images/Icons/User.png" alt="userIcon" class="feedbackUserIcon">
+						<div class="username">Сергей Викторович</div>
+					</div>
+					<div class="feedbackText">Полет прошел замечательно! Летаем ни первый раз, трудностей не возникало ни на одном этапе наших путешествий.</div>
+				</div>
+			</div>
+		</section>
+		<section class="subscribe wow fadeInUp" data-wow-delay="0.1s">
+			<h1 class="subHead">Подпишитесь на акции</h1>
+			<form>
+				<fieldset class="subscribeForm">
+					<label>Впишите свой адрес электронной почты</label>
+					<input required type="email" id="subEmail" class="test-0-sie">
+					<p id="checkSub"></p>
+					<button class="test-0-sbs" id="subscribeButton">Подписаться</button>
+				</fieldset>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<div class="test-0-phone" id="contact">Служба поддержки: <br> 8 (800) 100-10-10</div>
+			<a href="index.html" class="footerNav">Домой</a>
+			<a href="login.html" class="footerNav">Войти</a>
+			<a href="register.html" class="footerNav">Регистрация</a>
+			<a href="#contact" class="footerNav">Связь</a>
+			<a href="index.html#description" class="footerNav">Новости</a>
+			<a href="index.html" class="footerNav">Вернуться</a>
+			<a href="index.html#feedback" class="footerNav">Отзывы</a>
+	</footer>
+<script>
+		jQuery(document).ready(function(){
+			jQuery('.bxslider').bxSlider({
+				autoStart: true,
+				auto: true,
+				pause: 4000,
+				autoDirection: 'next',
+				autoHover: true
+			});
+		});
+</script>
+<script src="Scripts/wow.min.js"></script>
+<script type="text/javascript">
+	new WOW().init();
+</script>
+<script type="text/javascript" src="Scripts/scriptCheckSearch.js"></script>
+<script type="text/javascript" src="Scripts/sciptGetInfo.js"></script>
+</body>
+</html>

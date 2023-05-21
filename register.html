@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FlightPool - Регистрация</title>
+	<link rel="stylesheet" type="text/css" href="Styles/style.css">
+	<link rel="stylesheet" type="text/css" href="Styles/mainBxSlider.css">
+	<link rel="stylesheet" href="Styles/animate.css"/>
+</head>
+<body>
+	<header class="wow fadeInDown" data-wow-delay="0.1s">
+		<a href="index.html"><img src="Images/logo.png" alt="logo" class="test-0-logo"></a>
+		<div class="headerNavigation">
+			<a href="index.html#promotionSection" class="test-0-nav-1 headerNav">Акции</a>
+			<a href="index.html#searchForm" class="test-0-nav-2 headerNav">Поиск</a>
+			<a href="login.html" class="test-0-nav-3 headerNav">Личный кабинет</a>
+		</div>
+	</header>
+	<main class="wow fadeInUp" data-wow-delay="0.1s">
+		<h1>Регистрация</h1>
+		<form>
+			<fieldset>
+				<label>Имя</label>
+				<input type="text" id="name" class="test-2-name">
+				<label>Фамилия</label>
+				<input type="text" id="surname" class="test-2-last">
+				<label>Номер документа</label>
+				<input type="number" id="doc" class="test-2-doc">
+				<label>Телефон</label>
+				<input type="tel" id="phone" class="test-2-phone">
+				<label>Пароль</label>
+				<input type="password" id="password" class="test-2-pass">
+				<label>Повторите пароль</label>
+				<input type="password" id="password2" class="test-2-pass2">
+				<p id="checkRegister"></p>
+				<button id="registerButton" class="test-2-btn" type="button">Регистрация</button>
+			</fieldset>
+		</form>
+	</main>
+	<footer>
+		<div class="test-0-phone" id="contact">Служба поддержки: <br> 8 (800) 100-10-10</div>
+			<a href="index.html" class="footerNav">Домой</a>
+			<a href="login.html" class="footerNav">Войти</a>
+			<a href="register.html" class="footerNav">Регистрация</a>
+			<a href="#contact" class="footerNav">Связь</a>
+			<a href="index.html#description" class="footerNav">Новости</a>
+			<a href="index.html" class="footerNav">Вернуться</a>
+			<a href="index.html#feedback" class="footerNav">Отзывы</a>
+	</footer>
+<script src="Scripts/wow.min.js"></script>
+<script type="text/javascript">
+	new WOW().init();
+</script>
+<script type="text/javascript" src="Scripts/scriptCheckRegister.js"></script>
+</body>
+</html>
